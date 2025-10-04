@@ -202,21 +202,17 @@ header nav:target #burger li:last-child {
   justify-content: center;
 }
 
-
 /*BANNER*/
 
 .banner-home {
   width: 100%;
   height: auto;
-  display: block;
-}
-
-.banner-home {
   background-color: #ee76bc;
   z-index: -1;
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
@@ -227,11 +223,12 @@ header nav:target #burger li:last-child {
 
 .banner-text h2 {
   font-family: "KodeMono", monospace;
-  font-size: 1rem;
+  font-size: 2rem;
   flex-direction: column
 }
 
 .banner-text {
+  max-width: 78%;
   color: #fff;
   border-radius: 50px;
   padding: 0.7rem 1.5rem;
@@ -243,9 +240,7 @@ header nav:target #burger li:last-child {
   background-color: rgb(0, 0, 0);
   color: white;
   text-decoration: none;
-  font-style: bold;
-  font-size: larger;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 14px;
   cursor: pointer;
 }
@@ -253,6 +248,8 @@ header nav:target #burger li:last-child {
 .banner-p {
   text-decoration: #ffffff;
   padding: 1rem 0;
+  margin-top: 2rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .biografia h2 {
@@ -341,7 +338,6 @@ header nav:target #burger li:last-child {
   background-color: rgb(0, 0, 0);
   color: white;
   text-decoration: none;
-  font-style: bold;
   font-size: larger;
   padding: 0.5rem 1.5rem;
   border-radius: 14px;
@@ -548,34 +544,12 @@ footer {
     display: flex;
     align-items: center;
   }
-}
 
-/* --- BANNER --- */
-.banner-home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  position: relative;
-}
+  .banner-text {
+    padding: 3rem;
+  }
 
-.banner-text {
-  max-width: 75%;
-  padding: 3rem;
-  border-radius: 20px;
-}
-
-.banner-text h2 {
-  font-size: 3rem;
-  line-height: 1.2;
-  font-family: 'KodeMono', monospace;
-}
-
-.banner-p {
-  margin-top: 2rem;
-  font-family: 'Roboto', sans-serif;
+  .banner-text h2 {
+    font-size: 3rem;
+  }
 }
