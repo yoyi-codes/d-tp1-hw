@@ -157,7 +157,7 @@ header nav #barra a:hover {
   background-color: rgb(245, 204, 20);
   position: absolute;
   width: 100%;
-  top: 4rem;
+  top: 5rem;
   left: 0;
   overflow: hidden;
   transition: all 1s ease;
